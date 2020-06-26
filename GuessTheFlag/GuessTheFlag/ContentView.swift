@@ -39,6 +39,15 @@ struct ContentView: View {
                             .shadow(color: Color.black, radius: 2)
                     }
                 }
+                
+                HStack {
+                    Text("Your Score:")
+                    Text("\(self.score)")
+                        .underline()
+                }
+                .foregroundColor(.white)
+                
+                
                 Spacer()
             }
         }
